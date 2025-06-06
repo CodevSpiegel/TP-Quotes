@@ -62,7 +62,7 @@ main {
 .checkbox-block {
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: 48px;
     margin-bottom: 48px;
 }
 
