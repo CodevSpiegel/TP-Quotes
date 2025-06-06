@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Minitel";
+    src: url("./fonts/Minitel.ttf");
+}
 
 *,
 html {
@@ -57,6 +61,8 @@ main {
     padding: 16px;
     margin-bottom: 32px;
     background-color: rgb(221, 221, 221);
+    font-family: 'Minitel', Courier, monospace;
+    font-size: 12px;
 }
 
 

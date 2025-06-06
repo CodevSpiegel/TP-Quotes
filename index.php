@@ -15,8 +15,9 @@
 <div class="header-main">
     <div>TP QUOTES</div>
     <div>
-        <form action="#">
+        <form action="#" method="POST">
             <input type="text" placeholder="Rechercher">
+            <button name="submit">Go</button>
         </form>
     </div>
 </div>
@@ -24,23 +25,23 @@
     <div class="checkbox-block">
         <div class="form-group">
             <label for="html">HTML</label>
-            <input type="checkbox" name="html" id="html" />
+            <input type="checkbox" name="language" id="html" />
         </div>
         <div class="form-group">
             <label for="css">CSS</label>
-            <input type="checkbox" name="css" id="css" />
+            <input type="checkbox" name="language" id="css" />
         </div>
         <div class="form-group">
             <label for="js">JS</label>
-            <input type="checkbox" name="js" id="js" />
+            <input type="checkbox" name="language" id="js" />
         </div>
         <div class="form-group">
             <label for="php">PHP</label>
-            <input type="checkbox" name="php" id="php" />
+            <input type="checkbox" name="language" id="php" />
         </div>
         <div class="form-group">
             <label for="sql">SQL</label>
-            <input type="checkbox" name="sql" id="sql" />
+            <input type="checkbox" name="language" id="sql" />
         </div>
     </div>
     <div class="submit-block">
