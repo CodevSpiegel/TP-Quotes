@@ -19,13 +19,13 @@ if (!isset($_POST['act'])) {
 }
 
 // ON VERIFIE QUE LES VALEURS DE $_POST['act'] SOIENT VALIDES.
-// SINON ELLE N'EXISTENT PAS !! DONC ON REDIRIGE DIRECT VERS INDEX.PHP.
-if ($_POST['act'] === "search" || $_POST['act'] === "quotes") {
-    require_once ("./data/quotes.php");
-    // echo "<p>Le fichier 'data.php' a été recuperé !</p>";
-}
 // SI TOUT EST OK ! ON CHARGE LE FICHIER DATA
-else
+// SINON ELLE N'EXISTENT PAS !! DONC ON REDIRIGE DIRECT VERS INDEX.PHP.
+if ($_POST['act'] === "search" || $_POST['act'] === "quotes") 
+{
+    require_once ("./data/quotes.php");
+}
+else 
 {
     header("Location: ./index.php");
     die;
@@ -41,8 +41,7 @@ if ($_POST['act'] === "quotes") {
         header("Location: ./index.php?error=emptySelect");
         die;
     }
-    // SINON ON Y VA !
-    else 
+    else // SINON ON Y VA !
     {
         // (SI PLUSIEURS) ON TIRE L'INDEX D'UN LANGAGE AU HASARD
         $rand_language = array_rand($_POST['language'], 1);
@@ -51,8 +50,6 @@ if ($_POST['act'] === "quotes") {
         $rand_quote = array_rand($quotes[$language], 1);
         $quote = $quotes[$language][$rand_quote];
 
-        // echo "<p>".strtoupper($language)."</p>";
-        // echo "<p>".$quote."</p>";
         $l = strtoupper($language);
         $q = $quote;
         header("Location: ./index.php?l=".$l."&q=".$q);

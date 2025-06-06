@@ -25,23 +25,45 @@ main {
     width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    border-radius: 40px;
+    border-radius: 48px;
     border: 1px solid #363636;
-    background-color: #e6e6e6;
+    background-color: #031821;
 }
 
+
+
+
 .header-main {
-    padding: 16px 0;
+    padding: 24px 32px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.header-main input[type="text"] {
+    padding: 12px;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 20px;
 }
 
 .checkbox-block {
     display: flex;
     justify-content: center;
-    gap: 48px;
+    gap: 64px;
+    margin-bottom: 48px;
 }
 
 .submit-block {
@@ -61,12 +83,12 @@ main {
     align-items: center;
     text-align: center;
     gap: 16px;
-    width: 85%;
+    width: 90%;
     height: 160px;
     border-radius: 20px;
     padding: 16px 24px;
     margin-bottom: 32px;
-    background-color: #363636;
+    background-color: #2e2e2e;
     font-family: 'Minitel', Courier, monospace;
     font-size: 12px;
     line-height: 1.6rem;
@@ -81,14 +103,14 @@ main {
 }
 
 button {
-    background-color: #1183fc;
+    background-color: #2a6490;
     color: white;
     padding: 8px 24px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 24px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 button:hover {
@@ -124,7 +146,7 @@ button:hover {
 }
 
 .form-group label {
-    color: #464646;
+    color: #8f8f8f;
     font-weight: bold;
 }
 

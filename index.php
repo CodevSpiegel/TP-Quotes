@@ -24,16 +24,18 @@
 
 
 <main>
+<form action="traitement.php" method="POST">
 <div class="header-main">
-    <div>TP QUOTES</div>
-    <div>
-        <form action="traitement.php" method="POST">
+    <div class="logo">
+        <img src="./img/logo.webp" alt="">
+    </div>
+    <div class="search">
             <input type="hidden" name="act" value="search" />
             <input type="text" name="wordToSearch" placeholder="Rechercher un mot" />
             <button name="submit">Go</button>
-        </form>
+        </div>
     </div>
-</div>
+</form>
 <form action="traitement.php" method="POST">
     <input type="hidden" name="act" value="quotes">
     <div class="checkbox-block">
