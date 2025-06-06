@@ -51,8 +51,11 @@ if ($_POST['act'] === "quotes") {
         $rand_quote = array_rand($quotes[$language], 1);
         $quote = $quotes[$language][$rand_quote];
 
-        echo "<p>".strtoupper($language)."</p>";
-        echo "<p>".$quote."</p>";
+        // echo "<p>".strtoupper($language)."</p>";
+        // echo "<p>".$quote."</p>";
+        $l = strtoupper($language);
+        $q = $quote;
+        header("Location: ./index.php?l=".$l."&q=".$q);
     }
 
 }

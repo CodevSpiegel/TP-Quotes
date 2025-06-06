@@ -1,5 +1,13 @@
 <?php
-    
+    $language = "";
+    $quote = "";
+
+    if (isset($_GET['l']) ) {
+        $language =  $_GET['l'];
+    }
+    if (isset($_GET['q']) ) {
+        $quote =  $_GET['q'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +29,7 @@
     <div>
         <form action="traitement.php" method="POST">
             <input type="hidden" name="act" value="search" />
-            <input type="text" name="wordToSearch" placeholder="Rechercher" />
+            <input type="text" name="wordToSearch" placeholder="Rechercher un mot" />
             <button name="submit">Go</button>
         </form>
     </div>
@@ -52,11 +60,14 @@
     </div>
     <div class="submit-block">
         <div class="button">
-            <button name="submit">Afficher une Quote</button>
+            <button name="submit">Afficher une Citation</button>
         </div>
     </div>
     <div class="text-block">
-        <div class="quote-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum?</div>
+        <div class="quote-content">
+            <div><<<-- <?= $language; ?> -->>></div>
+            <div><?= $quote; ?></div>
+        </div>
     </div>
 </form>
 

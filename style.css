@@ -27,8 +27,8 @@ main {
     flex-direction: column;
     gap: 48px;
     border-radius: 40px;
-    border: 1px solid black;
-    background-color: #eeeeee;
+    border: 1px solid #363636;
+    background-color: #e6e6e6;
 }
 
 .header-main {
@@ -41,7 +41,7 @@ main {
 .checkbox-block {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 48px;
 }
 
 .submit-block {
@@ -55,14 +55,22 @@ main {
 }
 
 .quote-content {
-    width: 600px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    width: 85%;
+    height: 160px;
     border-radius: 20px;
-    padding: 16px;
+    padding: 16px 24px;
     margin-bottom: 32px;
-    background-color: rgb(221, 221, 221);
+    background-color: #363636;
     font-family: 'Minitel', Courier, monospace;
     font-size: 12px;
+    line-height: 1.6rem;
+    color: #fffb00;
 }
 
 
@@ -75,11 +83,11 @@ main {
 button {
     background-color: #1183fc;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 24px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 24px;
     transition: background-color 0.3s ease;
 }
 
