@@ -116,7 +116,7 @@ $quotes = [
         "Marco... viens me chercher !",
         "Samuel la truelle est un genie !",
         "Sharon est une battante !",
-        "Mailys aime le maïs !",
+        "Maÿlis aime le maïs !",
         "Valentin nous surprendra toujours !",
         "Avec Damien tout va bien !",
         "Sebastien adore l'Anglais !",
