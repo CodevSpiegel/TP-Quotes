@@ -14,6 +14,7 @@ html {
 
     --primary-color: #dcdcdc;
     --secondary-color: #224bff;
+    --secondary-color-hover: #395eff;
     --body-bgcolor: #fafafa;
     --border-color: #838383;
 }
@@ -79,7 +80,7 @@ main {
 }
 
 .search button:hover {
-    background-color: #395eff;
+    background-color: var(--secondary-color-hover);
 }
 
 
@@ -107,7 +108,7 @@ main {
 }
 
 .container-main button:hover {
-    background-color: #395eff;
+    background-color: var(--secondary-color-hover);
 }
 
 .container-main-inputs {
