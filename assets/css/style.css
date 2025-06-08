@@ -174,7 +174,7 @@ footer div a {
 
 @media (max-width: 900px) {
     main {
-        width: 600px;
+        width: 580px;
     }
 
     .search input[type="text"] {
@@ -189,7 +189,7 @@ footer div a {
 
 @media (max-width: 650px) {
     main {
-        width: 350px;
+        width: 340px;
     }
 
     .container {
