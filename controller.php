@@ -58,7 +58,7 @@ function search_quotes( array $quotes, array $datas ) {
     $language = $datas[$rand_language];
 
     $rand_quote = array_rand($quotes[$language], 1);
-    $result_quote = $quotes[$language][$rand_quote];
+    $result_quote = htmlspecialchars($quotes[$language][$rand_quote]);
 
     return $result_quote;
 }
