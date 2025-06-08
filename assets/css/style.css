@@ -176,12 +176,27 @@ footer div a {
     main {
         width: 600px;
     }
+
+    .search input[type="text"] {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    .search button {
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 650px) {
     main {
         width: 350px;
     }
+
+    .container {
+        gap: 28px;
+        padding: 16px;
+    }
+
     .container-header {
         flex-direction: column;
         gap: 16px;
@@ -190,7 +205,7 @@ footer div a {
     .container-main-inputs {
         gap: 10px;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     input[type="checkbox"] {
