@@ -13,8 +13,9 @@ html {
 :root {
 
     --primary-color: #dcdcdc;
-    --secondary-color: #fcfcfc;
+    --secondary-color: #224bff;
     --body-bgcolor: #fafafa;
+    --border-color: #838383;
 }
 
 
@@ -40,7 +41,7 @@ main {
     gap: 48px;
     padding: 24px;
     border-radius: 24px;
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid var(--border-color);
     background-color: var(--primary-color);
 }
 
@@ -62,19 +63,18 @@ main {
 .search input[type="text"] {
     padding: 8px 16px;
     border-radius: 4px;
-    border: 1px solid #838383;
+    border: 1px solid var(--border-color);
     font-size: 16px;
-    background-color: #e9e9e9;
 }
 
 .search button {
     padding: 8px 16px;
     border-radius: 4px;
-    border: 1px solid #838383;
+    border: 1px solid var(--border-color);
     font-size: 16px;
     font-weight: 600;
     color: #fafafa;
-    background-color: #224bff;
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -98,11 +98,11 @@ main {
 .container-main button {
     padding: 12px 24px;
     border-radius: 8px;
-    border: 1px solid #838383;
+    border: 1px solid var(--border-color);
     font-size: 20px;
     font-weight: 600;
     color: #fafafa;
-    background-color: #224bff;
+    background-color: var(--secondary-color)
     cursor: pointer;
 }
 
