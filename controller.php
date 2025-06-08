@@ -81,7 +81,7 @@ function search_words( array $quotes, string $word ) {
 
     if( !empty($match_quotes) ) {
         $rand_quote = array_rand($match_quotes, 1);
-        $result_quote = $match_quotes[$rand_quote];
+        $result_quote = htmlspecialchars($match_quotes[$rand_quote]);
     }
     else {
         $result_quote = "Aucune citation correspondante avec le mot recherché : '$wordToSearch'";
