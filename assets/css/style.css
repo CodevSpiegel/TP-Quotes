@@ -202,8 +202,11 @@ footer div a {
         gap: 16px;
     }
 
+    .form-group {
+        gap: 4px;
+    }
     .container-main-inputs {
-        gap: 10px;
+        gap: 12px;
         font-size: 16px;
         margin-bottom: 0px;
     }
