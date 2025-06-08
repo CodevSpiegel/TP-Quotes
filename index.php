@@ -1,80 +1,96 @@
-<?php
-    $language = "";
-    $quote = "";
-
-    if (isset($_GET['l']) ) {
-        $language =  $_GET['l'];
-    }
-    if (isset($_GET['q']) ) {
-        $quote =  $_GET['q'];
-    }
-?>
+<?php require_once ("./controller.php") ?>
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes exercise</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-
-
 <main>
-<form action="traitement.php" method="POST">
-<div class="header-main">
-    <div class="logo">
-        <img src="./img/logo.webp" alt="">
-    </div>
-    <div class="search">
-            <input type="hidden" name="act" value="search" />
-            <input type="text" name="wordToSearch" placeholder="Rechercher un mot" />
-            <button name="submit">Go</button>
+    <div class="container">
+        <div class="container-header">
+            <div class="logo">
+                <a href="./"><img src="./assets/img/logo.webp" alt=""></a>
+            </div>
+            <div class="form-group search">
+                <div>
+                    <form action="./" method="POST">
+                    <input type="hidden" name="act" value="word"/>
+                    <input type="text" name="wordToSearch" placeholder="Rechercher un mot." />
+                </div>
+                <div>
+                    <button name="submit">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-main">
+            <div class="container-main-inputs">
+                <div class="form-group">
+                    <form action="./" method="POST">
+                    <input type="hidden" name="act" value="quote">
+                </div>
+                <div class="form-group">
+                    <span>
+                        <label for="html">HTML</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="language[]" id="html" value="html" <?= $checked_html ?>/>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <label for="css">CSS</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="language[]" id="css" value="css" <?= $checked_css ?>/>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <label for="js">JS</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="language[]" id="js" value="javascript" <?= $checked_javascript ?>/>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <label for="php">PHP</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="language[]" id="php" value="php" <?= $checked_php ?>/>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <label for="sql">SQL</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="language[]" id="sql" value="sql" <?= $checked_sql ?>/>
+                    </span>
+                </div>
+            </div>
+            <div class="container-main-submit">
+                <div>
+                    <button name="submit">Afficher une Citation</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="container-footer">
+            <quote><?= $quote; ?></quote>
         </div>
     </div>
-</form>
-<form action="traitement.php" method="POST">
-    <input type="hidden" name="act" value="quotes">
-    <div class="checkbox-block">
-        <div class="form-group">
-            <label for="html">HTML</label>
-            <input type="checkbox" name="language[]" id="html" value="html" />
-        </div>
-        <div class="form-group">
-            <label for="css">CSS</label>
-            <input type="checkbox" name="language[]" id="css" value="css" />
-        </div>
-        <div class="form-group">
-            <label for="js">JS</label>
-            <input type="checkbox" name="language[]" id="js" value="javascript" />
-        </div>
-        <div class="form-group">
-            <label for="php">PHP</label>
-            <input type="checkbox" name="language[]" id="php" value="php" />
-        </div>
-        <div class="form-group">
-            <label for="sql">SQL</label>
-            <input type="checkbox" name="language[]" id="sql" value="sql" />
-        </div>
-    </div>
-    <div class="submit-block">
-        <div class="button">
-            <button name="submit">Afficher une Citation</button>
-        </div>
-    </div>
-    <div class="text-block">
-        <div class="quote-content">
-            <div><<<-- <?= $language; ?> -->>></div>
-            <div><?= $quote; ?></div>
-        </div>
-    </div>
-</form>
-
 </main>
-
+<footer>
+    <div>
+        <img src="./assets/img/github.svg" alt="icon GitHub">
+        <a href="https://github.com/CodevSpiegel/TP-Quotes.git" target="_blank">Code source disponible sur Github</a>
+    </div>
+</footer>
 </body>
-
 </html>

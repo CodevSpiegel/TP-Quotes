@@ -3,6 +3,7 @@
 $quotes = [
     'php' => [
         "PHP, c’est comme un vieux vélo : ça roule, mais on entend tous les boulons trembler.",
+        "PHP, Samuel la truelle est un genie, mais l'experience demande du temps ;)",
         "PHP : le langage qui te donne des super-pouvoirs… sauf quand il plante.",
         "En PHP, chaque erreur est une surprise et chaque succès un miracle.",
         "PHP, c’est comme les réunions de famille : on n’y comprend pas tout, mais on reste quand même.",
@@ -27,6 +28,7 @@ $quotes = [
         "JavaScript, c’est le Far West du code : tout est permis, rien n’est certain.",
         "JS : un langage où `undefined` est une réponse acceptable.",
         "JavaScript, c’est comme une montagne russe : tu crie, tu ris, tu pleures… en boucle.",
+        "JavaScript, Sharon va y arriver ! Je crois en elle.",
         "Un `console.log()` par ligne, et tu découvriras l’univers.",
         "JavaScript, c’est comme la magie noire : ça marche, mais tu ne sais pas pourquoi.",
         "JS : le seul langage où `false == '0'` est vrai, mais `false === '0'` est faux.",
@@ -47,6 +49,7 @@ $quotes = [
     ],
     'sql' => [
         "SQL, c’est l’art de parler à une machine en langage bureaucratique.",
+        "SQL, Marco viens me chercher !",
         "Un `JOIN` bien placé vaut mieux qu’un long discours.",
         "En SQL, une erreur de syntaxe, c’est souvent une virgule mal placée.",
         "SQL : l’endroit où `NULL = NULL` est faux.",
@@ -69,6 +72,7 @@ $quotes = [
     ],
     'css' => [
         "CSS, c’est peindre une maison avec une cuillère.",
+        "CSS, Maïs Maïs Maïs Maïs Maïs !!!.",
         "Le CSS est une illusion d’optique maîtrisée.",
         "Un pixel en trop, et tout s’effondre.",
         "CSS : le seul endroit où `display: flex;` résout tous tes problèmes (ou presque).",
@@ -92,6 +96,7 @@ $quotes = [
     'html' => [
         "HTML, c’est le squelette invisible du web.",
         "Chaque balise HTML est une brique dans ton château numérique.",
+        "Farid est un clairvoyant, je crois en lui !",
         "`<div>` : parce que tout peut être un `div` si tu crois assez fort.",
         "HTML ne fait rien… mais sans lui, rien ne se fait.",
         "Le HTML, c’est comme une partition sans musique : il attend ses styles.",
