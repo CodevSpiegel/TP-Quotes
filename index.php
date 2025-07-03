@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes exerciseyyy</title>
+    <title>Quotes exercice</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
